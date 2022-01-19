@@ -1,0 +1,33 @@
+{
+    "plants": [
+      {
+        "groupId": "v1|110007544646|0",
+        "title": {
+          "content": "Apple iPhone 4S - 32GB - White Smartphone-14485"
+        },
+        "imageLink": "http://i.ebayimg.qa.ebay.com/00OmEU/$_35.JPG",
+        "minPrice": {
+          "value": 300,
+          "currency": "USD"
+        },
+        "maxPrice": {
+          "value": 300,
+          "currency": "USD"
+        },
+        "categoryIdentifier": "Cell Phones & Smartphones",
+        "quantitySold": 12,
+        "discount": true,
+        "originalPrice": {
+          "value": 401,
+          "currency": "USD"
+        },
+        "quantityLimitPerBuyer": 5,
+        "priceDisplayCondition": "ALWAYS_SHOW",
+        "itemGroup": "/buy/v1/item_group/v1|110007544646|0",
+        "dealEndtime": {
+          "value": "2015-11-27T14:59:00.000Z",
+          "formattedValue": "2015-11-27T14:59:00.000Z"
+        }
+      }
+    ]
+  }

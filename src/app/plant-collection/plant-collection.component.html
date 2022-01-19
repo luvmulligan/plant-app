@@ -1,0 +1,10 @@
+<div 
+  class="plant-item"
+  *ngFor="let plant of plants"
+>
+<p>{{plant.title.content}}</p><span> $ {{plant.originalPrice.value}}</span>
+  <button
+    (click)="remove.emit(plant.groupId)"
+    data-test="remove-button"
+  >Remove from Collection</button>
+</div>
