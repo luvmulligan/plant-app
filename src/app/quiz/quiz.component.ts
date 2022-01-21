@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormArray, FormBuilder, FormControl, Validators } from '@angular/forms';
 
 
 @Component({
@@ -8,9 +8,14 @@ import { FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./quiz.component.scss']
 })
 export class QuizComponent implements OnInit {
+
   quizForm = this.fb.group({
     location: ['', Validators.required],
-    skills: ['', Validators.required],
+    skills: new FormArray([
+      new FormControl('beginner'),
+      new FormControl('skilled'),
+      new FormControl('expert'),
+    ]),
     spaceSize: ['', Validators.required],
     designType: ['', Validators.required],
     lightingType: ['',Validators.required],
@@ -21,6 +26,7 @@ export class QuizComponent implements OnInit {
   constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
+    console.log(this.quizForm.controls['skills'].value)
   }
 
 }
