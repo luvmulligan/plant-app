@@ -3,23 +3,23 @@
       {
         "groupId": "v1|110007544646|0",
         "title": {
-          "content": "Apple iPhone 4S - 32GB - White Smartphone-14485"
+          "content": "Monstera Deliciosa baby - Houseplant, Tropical, Plant"
         },
-        "imageLink": "http://i.ebayimg.qa.ebay.com/00OmEU/$_35.JPG",
+        "imageLink": "https://i.ebayimg.com/images/g/SpoAAOSwHRJgCsv9/s-l500.png",
         "minPrice": {
-          "value": 300,
-          "currency": "USD"
+          "value": 4.99,
+          "currency": "GBP"
         },
         "maxPrice": {
           "value": 300,
-          "currency": "USD"
+          "currency": "GBP"
         },
         "categoryIdentifier": "Cell Phones & Smartphones",
         "quantitySold": 12,
         "discount": true,
         "originalPrice": {
           "value": 401,
-          "currency": "USD"
+          "currency": "GBP"
         },
         "quantityLimitPerBuyer": 5,
         "priceDisplayCondition": "ALWAYS_SHOW",

@@ -10,24 +10,5 @@ import { selectPlantCollection, selectPlants } from './state/plants.selectors';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'plant-app';
-  plants$ = this.store.select(selectPlants);
-  plantCollection$ = this.store.select(selectPlantCollection);
-
-  constructor(
-    private plantsService: GooglePlantsService,
-    private store: Store
-  ) {}
-
-  ngOnInit() {
-    this.plantsService
-      .getPlants()
-      .subscribe((plants) => this.store.dispatch(retrievedPlantList({ plants })));
-  }
-  onAdd(groupId: string) {
-    this.store.dispatch(addPlant({ groupId }));
-  }
-  onRemove(groupId: string) {
-    this.store.dispatch(removePlant({ groupId }));
-  }
+  title = 'Plant Starter';
 }

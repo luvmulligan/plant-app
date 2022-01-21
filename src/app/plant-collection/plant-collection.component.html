@@ -1,10 +1,14 @@
-<div 
-  class="plant-item"
-  *ngFor="let plant of plants"
->
-<p>{{plant.title.content}}</p><span> $ {{plant.originalPrice.value}}</span>
-  <button
-    (click)="remove.emit(plant.groupId)"
-    data-test="remove-button"
-  >Remove from Collection</button>
+<div *ngFor="let plant of plants" class="plant-item col-lg-6 col-xxl-4 mb-5">
+  <div class="card bg-light border-0 h-100">
+      <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+          <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><img class="card-img" src="{{plant.imageLink}}" alt=""></div>
+          <h2 class="fs-4 fw-bold">{{plant.title.content}}</h2>
+          <p class="mb-0"> $ {{plant.originalPrice.value}}</p>
+          <button class="btn btn-primary"
+          (click)="remove.emit(plant.groupId)"
+          data-test="remove-button"
+        >- Remove from collection</button>
+      </div>
+     
+  </div>
 </div>
