@@ -1,11 +1,9 @@
-        <div class="row gx-lg-5">
-            <app-plant-list class="plant-list" [plants]="plants$ | async" (add)="onAdd($event)"></app-plant-list>
+        <div class="container px-lg-5">
+            <div class="row gx-lg-5">
+                <app-plant-list class="plant-list" [plants]="plants$ | async" (add)="onAdd($event)"></app-plant-list>
+            </div>
+            <div class="row gx-lg-5">
+                <app-plant-collection class="plant-collection" [plants]="plantCollection$ | async" (remove)="onRemove($event)">
+                </app-plant-collection>        
+            </div>
         </div>
-
-        <div class="row gx-lg-5">
-
-            <app-plant-collection class="plant-collection" [plants]="plantCollection$ | async" (remove)="onRemove($event)">
-            </app-plant-collection>        
-        </div>
-
-
